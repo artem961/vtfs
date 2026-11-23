@@ -1,0 +1,22 @@
+# Linux Kbuild
+*.o
+*.ko
+*.mod
+*.mod.c
+.*.cmd
+.tmp_versions/
+Module.symvers
+modules.order
+
+# Локальные настройки и сборка сервера
+.env
+target/
+
+/deploy/
+/compose.yml
+/README.md
+/server/README.md
+/server/check_api.py
+/server/.dockerignore
+/server/Dockerfile
+/storage-api.md

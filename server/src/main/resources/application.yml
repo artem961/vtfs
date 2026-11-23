@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: vtfs-server
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://postgres:5432/vtfs}
+    username: ${DB_USER:vtfs}
+    password: ${DB_PASSWORD}
+    hikari:
+      maximum-pool-size: 4
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+server:
+  port: 8080
+  tomcat:
+    threads:
+      max: 20
+vtfs:
+  token: vtfs-course-osi
